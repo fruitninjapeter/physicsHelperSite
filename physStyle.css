@@ -1,0 +1,86 @@
+body {
+    background: rgb(34,219,20); /* Gradient background left-to-right: https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(34,219,20,1) 0%, rgba(0,185,255,1) 100%);
+    
+    margin-top: 12vh; /* set position 14% down from the top of screen, https://www.w3schools.com/cssref/css_units.php */
+    margin-left: 2vw; /* set position 2% rightwards from the left of screen */
+}
+
+p {
+    font-family: stevie-sans, sans-serif;
+    font-size: 1.2em; /* em: relative to the font-size of the element */
+}
+
+h1 {
+    font-family: orbitron, sans-serif;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-family: nitti-typewriter-cameo, sans-serif;
+    font-size: 1.4em;
+}
+
+nav {
+    font-family: orbitron, sans-serif;
+    width: 60vw;   /* Once we declare width here, we can start designing this */
+    background: white;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgb(220, 58, 58) 100%);
+    position: fixed;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 4vh;
+    top: 0;
+    right: -5px;
+}
+nav li {
+	display: inline;
+}
+nav a {
+	display: inline-block;
+	padding: 10px;
+}
+a {
+	flex: 1;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.4s ease-out;
+}
+a:hover,
+a:focus {
+	color: white;
+	background: black;
+}
+
+#epTitle {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(0,185,255,1) 100%);
+    padding: 3vh;
+    width: 50vw;
+    /* font-size: calc(1vw + 1vh); */
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.equations {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 8vh;
+    min-height: 50px;
+}
+
+#energyResult {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgb(0, 255, 94) 100%);
+    width: 60vw;
+    font-size: calc(1vw + 1vh);
+    padding: 2vh;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+ol, .bulletPoints {
+    font-family: stevie-sans, sans-serif;
+    font-size: 1em;
+}

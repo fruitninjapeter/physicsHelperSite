@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Physics Helper Site</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vll7vvt.css">
+        <!-- <link rel="stylesheet" href="https://latex.now.sh/style.css">
+            if only i can figure out how to implement LaTeX without it modifying the entire webpage's typography.-->
+        <link rel="stylesheet" href="physStyle.css">
+    </head>
+
+    <body>
+        
+        <div> 
+            <nav>
+                <ul>
+                    <li><a href="index2.html">Placeholder 1</a></li>
+                    <li><a href="index3.html">Placeholder 2</a></li>
+                </ul>
+            </nav> 
+        </div>
+
+        <div>
+            <h1>Welcome!</h1>
+            <p>This website is used for my convenience in my class to help me understand stuff here. I'll look to update this to cover more Physics concepts over time.</p>
+        </div>
+        
+        <h1 id="epTitle">Energy of a Photon</h1>
+        <img class="equations" src="/physPics/PhotonEnergy.png" alt="Equation for Photon Energy">
+
+        <div>
+            <input type="number" id="physInput" placeholder="Enter number..." />
+            <select id="physVariable">
+                <option value="frequency">Frequency (s)</option>
+                <option value="wavelengthNM">Wavelength (nm)</option>
+            </select>
+            <button onclick="getEnergy()">Find Energy</button>
+        </div>
+
+        <p id="energyResult">Result: </p>
+
+        <div>
+            <h3>Website Goals:</h3>
+            <ol>
+                <li>Through creating this website, get better at front-end web development.</li>
+                <li>Make it easier for me to understand Physics.</li>
+                <li>Be accessible on my Phone so i can refer to it during class; responsive web design.</li>
+                <li>Expand website with some animated physics simulations
+                    <ul>
+                        <li>CSS animations</li>
+                        <li>JS functionality</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h3>Update log: </h3>
+            <ul class="bulletPoints">
+                <li>April 4th: Started website</li> 
+                <ul>
+                    <li>Designed website theme</li>
+                    <li>Added js functionality: converting units function for Photon Energy</li>
+                    <li>Added links to duplicate outdated html pages in same file</li>
+                </ul>
+                <li>April 5th: Started writing this update log</li>
+            </ul>
+        </div>
+
+        <script src="physFunctions.js"></script>
+    </body>
+</html>
